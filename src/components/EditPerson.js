@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { getPerson } from './api';
-import PeopleForm from './PeopleForm';
+import { getPerson } from '../api';
+import PeopleForm from './PeopleForm/PeopleForm';
 
 function EditPerson() {
   const { id } = useParams();

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { createPerson, updatePerson } from "./api";
+import { createPerson, updatePerson } from "../../api";
+import "./PeopleForm.css";
 
 function PeopleForm({ person, onSubmit }) {
   const [name, setName] = useState(person ? person.name : "");
@@ -14,17 +15,17 @@ function PeopleForm({ person, onSubmit }) {
     const data = { name, email, phone, address };
     if (person) {
       updatePerson(person.id, data).then(() => {
-        onSubmit();
+        navigate(-1);
       });
     } else {
       createPerson(data).then(() => {
-        onSubmit();
+        navigate(-1);
       });
     }
   };
 
   return (
-    <div>
+    <div className="PeopleForm">
       <h1>{person ? "Edit Person" : "Create Person"}</h1>
       <form onSubmit={handleSubmit}>
         <div>
@@ -62,7 +63,7 @@ function PeopleForm({ person, onSubmit }) {
         <div>
           <button type="submit">{person ? "Update" : "Save"}</button>
           <button type="button" onClick={() => navigate(-1)}>
-            Cancel
+            Go Back
           </button>
         </div>
       </form>

@@ -1,0 +1,112 @@
+/* PeopleList component */
+
+.PeopleList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.new-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  }
+
+  .new-button-link {
+    
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .new-button:hover {
+    background-color: #0069d9;
+  }
+
+
+button.delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+  }
+
+.edit-btn {
+    background-color: #4285F4;
+    color: #FFF;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .edit-btn:hover {
+    background-color: #2F68D7;
+  }
+
+  
+
+  /* center People List component */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  /* style the table */
+  table {
+    width: 85%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  td:last-child {
+    text-align: center;
+  }
+  
+  
+  
+
+  
+  
